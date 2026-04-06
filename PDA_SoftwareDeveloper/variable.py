@@ -1,5 +1,5 @@
 # Author : Eswari
-# Description : My first python program
+# Description : python variable program
 # Date : 06-Apr-2026
 
 # Define and initialize a variable

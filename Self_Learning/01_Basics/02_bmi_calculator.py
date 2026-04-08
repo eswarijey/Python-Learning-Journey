@@ -8,13 +8,14 @@ def bmical(w,h):
 
 def bmicateg(bmival):
     if bmival < 18.5:
-        print("Underweight")
+        category = "Underweight"
     elif bmival<25:
-        print("Normal")
+        category = "Normal"
     elif bmival<30:
-        print("Overweight")
+        category = "Overweight"
     else:
-        print("Obese")
+        category = "Obese"
+    return category
 
 while True:
     try:
@@ -30,6 +31,9 @@ while True:
 
         getbmi = bmical(weight,height)
         getcateg = bmicateg(getbmi)
+
+        print(f"Your BMI is : {getbmi:.2f}")
+        print("Category: ", getcateg)
 
         break
     
